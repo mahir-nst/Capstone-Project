@@ -132,6 +132,11 @@ nav a {
   flex-direction: column;
   gap: 8px; 
 }
+.image-container:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
 
 .image-container img {
   width: 100%;
@@ -359,6 +364,11 @@ footer {
   .subscribe-form input {
     width: 100%;
     max-width: 300px;
+  }
+  .subscribe-form input::placeholder {
+    color: #666;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
